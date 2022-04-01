@@ -1,6 +1,6 @@
 ---
 created: 2022-04-01T23:13:31+02:00
-modified: 2022-04-01T23:25:06+02:00
+modified: 2022-04-01T23:26:41+02:00
 ---
 
 # ADR-0003 DataBuddy Key-Value Operations
@@ -19,6 +19,10 @@ Following commands are available:
 - use given bucket for further commands
 - return OK
 - return ERR if bucket doesn't exist
+
+`BUCKETS [<pattern>]`
+- list all buckets matching given pattern (or all buckets, if pattern isn't specified)
+- return array of found named (array of strings)
 
 `GET <key>`
 - return value stored at given key
