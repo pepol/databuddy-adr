@@ -1,6 +1,6 @@
 ---
 created: 2022-04-01T23:13:31+02:00
-modified: 2022-04-01T23:22:59+02:00
+modified: 2022-04-01T23:25:06+02:00
 ---
 
 # ADR-0003 DataBuddy Key-Value Operations
@@ -11,6 +11,7 @@ Following commands are available:
 
 `CREATE <bucket>`
 - create bucket with given name
+  - default ACLs for new buckets are specified in system configuration as either `private` (only creator has access) or `public` (everybody has all access)
 - return OK, with optional note if bucket exists
 - return ERR if creation failed for reason other than "already exists"
 
