@@ -1,9 +1,9 @@
 ---
 created: 2022-04-01T23:13:31+02:00
-modified: 2022-04-01T23:20:57+02:00
+modified: 2022-04-01T23:21:13+02:00
 ---
 
-# ADR-0003 DataBuddy Operations
+# ADR-0003 DataBuddy Key-Value Operations
 
 DataBuddy exposes redis-compatible API over the RESP.
 
