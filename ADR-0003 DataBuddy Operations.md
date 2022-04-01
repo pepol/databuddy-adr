@@ -1,6 +1,6 @@
 ---
 created: 2022-04-01T23:13:31+02:00
-modified: 2022-04-01T23:21:13+02:00
+modified: 2022-04-01T23:22:59+02:00
 ---
 
 # ADR-0003 DataBuddy Key-Value Operations
@@ -9,29 +9,29 @@ DataBuddy exposes redis-compatible API over the RESP.
 
 Following commands are available:
 
-CREATE <bucket>
+`CREATE <bucket>`
 - create bucket with given name
 - return OK, with optional note if bucket exists
 - return ERR if creation failed for reason other than "already exists"
 
-USE <bucket>
+`USE <bucket>`
 - use given bucket for further commands
 - return OK
 - return ERR if bucket doesn't exist
 
-GET <key>
+`GET <key>`
 - return value stored at given key
 - return ERR if key doesn't exist
 
-SET <key> <value>
+`SET <key> <value>`
 - store value at given key
 - return OK
 - return ERR if error occured
 
-DEL <key1> [<key2> ...]
+`DEL <key1> [<key2> ...]`
 - delete values stored at given key(s)
 - return count of deleted items
 
-KEYS [<pattern1> ...]
+`KEYS [<pattern1> ...]`
 - list keys matching given pattern(s), or all if no pattern is provided
 - return array of found keys (array of strings)
