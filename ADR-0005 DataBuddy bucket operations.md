@@ -14,8 +14,8 @@ Following commands are used for bucket management:
 `BUCKET COUNT`
 - return count of all available buckets
 
-`BUCKET LIST`
-- return list of all available buckets (names only)
+`BUCKET LIST [<prefix>]`
+- return list of all available buckets (names only) matching given prefix (or all if prefix is empty)
 - replaces `BUCKETS [<pattern>]`
 
 `BUCKET CREATE <bucket>`
