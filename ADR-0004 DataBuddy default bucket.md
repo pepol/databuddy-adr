@@ -1,6 +1,7 @@
 ---
 created: 2022-04-04T09:53:23+02:00
 modified: 2022-04-04T09:58:22+02:00
+amends: ADR-0002
 ---
 
 # ADR-0004 DataBuddy default bucket
